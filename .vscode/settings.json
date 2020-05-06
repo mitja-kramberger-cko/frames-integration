@@ -1,0 +1,11 @@
+{
+    "search.exclude": {
+      "**/dist": true,
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "recommendations": [
+      "esbenp.prettier-vscode",
+    ]
+  }

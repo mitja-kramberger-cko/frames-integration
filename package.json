@@ -1,0 +1,27 @@
+{
+  "name": "frames-integration",
+  "description": "Example Frames integration",
+  "author": "Mitja Kramberger <mitja.kramberger@checkout.com>",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "dev": "cross-env NODE_ENV=development ts-node --files ./src/app.ts",
+    "build": "rimraf ./dist && cross-env NODE_ENV=production tsc",
+    "start": "node ./dist/app.js"
+  },
+  "dependencies": {
+    "fastify": "^2.14.0",
+    "fastify-blipp": "^2.3.1",
+    "fastify-formbody": "^3.1.0",
+    "fastify-plugin": "^1.6.1",
+    "fastify-static": "^2.7.0",
+    "pino-pretty": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "cross-env": "^7.0.2",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
